@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            background: #051414 !important;
+        }
+
+        /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+
+                <!-- <div class="col-lg-12 login-title">
+                    Details
+                </div> -->
+
+                <div class="col-lg-12 login-form">
+                    <div class="col-lg-12 login-form">
+                        <form method="POST">
+                            <div class="form-group">
+                                <label class="form-control-label">Author's ID</label>
+                                <input autocomplete="off" type="text" class="form-control" name="AUTHOR_ID">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Author Name</label>
+                                <input autocomplete="off" type="text" class="form-control" i name="AUTHOR_NAME">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Department</label>
+                                <input autocomplete="off" type="text" class="form-control" i name="DEPARTMENT">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Role</label>
+                                <input autocomplete="off" type="text" class="form-control" i name="ROLE">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">USN/FID</label>
+                                <input autocomplete="off" type="text" class="form-control" i name="ID">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Phone Number</label>
+                                <input autocomplete="off" type="text" class="form-control" i name="PHONE">
+                            </div>
+
+
+
+                            <div class="col-lg-12 loginbttm">
+                                <div class="col-lg-6 login-btm login-text">
+                                    <!-- Error Message -->
+                                </div>
+                                <div class="col-lg-6 login-btm login-button">
+                                    <input type="submit" class="btn btn-outline-primary">ADD</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2"></div>
+            </div>
+        </div>
+
+</body>
+
+</html>

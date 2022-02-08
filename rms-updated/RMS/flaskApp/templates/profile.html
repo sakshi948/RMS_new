@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #051414;
+        }
+
+        h1 {
+
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            color: #d9e4dd;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 48%;
+
+        }
+
+        h4 {
+            color: #aeb3af;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-left: 48%;
+        }
+
+        .table {
+            padding-top: 13%;
+            padding-left: 35.6%;
+        }
+
+        div {
+
+            width: 30%;
+            display: block;
+            justify-content: center;
+            margin: auto;
+            width: 50%;
+        }
+
+        p {
+            color: aliceblue;
+        }
+
+        pre {
+            text-align: center;
+
+        }
+
+        h4 {
+            margin-left: 43%;
+        }
+
+
+        h3 h4 .nav-link {
+            color: white;
+
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h3 h4 .nav-link a:hover {
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+        #two{
+            padding-left: 15%;
+            color:aliceblue !important
+        }
+        #three{
+            padding-left: 35%;
+            color:aliceblue !important
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MY PROFILE</h1>
+
+    {% for value in userdata %}
+    <div>
+        
+        <pre>ID     : {{value[0]}}</pre>
+        <pre>NAME   : {{value[1]}}</pre>
+        <pre>BRANCH : {{value[2]}}</pre>
+        <pre>ROLE   : {{value[3]}}</pre>
+        <pre>USN    : {{value[4]}}</pre>
+        <pre>PHONE  : {{value[5]}}</pre>
+        {% endfor %}
+        <h3><a class="nav-link" id="three" href="{{ url_for('static', filename='AuthorDetails1.html') }}"> EDIT</a><a class="nav-link" id="two" href="{{ url_for('static', filename='project.html') }}">LOGOUT</a></h3>
+        
+    </div>
+
+    
+
+</body>
+
+</html>

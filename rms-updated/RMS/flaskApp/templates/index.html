@@ -1,0 +1,21 @@
+{% extends 'base.htm' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body%}
+
+<h1>All Posts</h1>
+{% for posts in var_post %}
+<h2>{{posts.title}}</h2>
+{% if posts.author %}
+<h2>{{posts.author}}</h2>
+{%else%}
+<h2>by:n/a</h2>
+{%endif%}
+<p>{{posts.content}}</p>
+
+{%endfor%}
+
+{% endblock %}

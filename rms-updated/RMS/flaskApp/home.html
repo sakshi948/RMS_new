@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(5, 20, 20);
+            ;
+        }
+
+        #navbar {
+            position: relative;
+            padding-left: 40%;
+            padding-top: 15%;
+            opacity: 1;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            /* background-color: black; */
+            position: absolute;
+            top: 0px;
+            padding: 30px;
+            bottom: 0px;
+            height: 466px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            font-family: fantasy;
+        }
+
+        ul li a {
+            color: white;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .items {
+            margin-bottom: 5%;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="items"><a href="#">Add Conference</a></li>
+            <li class="items"><a href="#">View Conference</a></li>
+            <li class="items"><a href="#">Add Journal</a></li>
+            <li class="items"><a href="#">View Journal</a></li>
+            <li class="items"><a href="#">View</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+
+</html>

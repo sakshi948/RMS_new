@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #051414;
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        #navbar1 {
+            position: relative;
+            padding-left: 35%;
+            padding-top: 15%;
+            opacity: 1;
+            top: 0px;
+        }
+
+        #navbar {
+            margin-right: 10%;
+        }
+
+        #navbar1::before {
+            
+            /* background-color: black; */
+            
+            top: 0px;
+            padding: 30px;
+            bottom: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            font-family: fantasy;
+        }
+
+        ul li a {
+            color: white;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+        
+        
+        a {
+            color: white;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .items {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .nav-link{
+            color: white;
+            
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .nav-link a:hover{
+            color: black;
+            background-color: white;
+        }
+        #final{
+            padding-left: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-right: 5%;">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('static', filename='profile.html') }}">Welcome {{username}} <span
+                        class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        </div>
+    </nav>
+
+    <nav id="navbar1">
+    <a class="nav-link" href="{{ url_for('static', filename='conferences.html') }}">Add Your Conference</a>
+    <a class="nav-link" href="{{ url_for('static', filename='viewCon.html') }}">View Conferences</a><br>
+    <a class="nav-link" href="{{ url_for('static', filename='journal.html') }}">Add Your Journal</a>
+    <a class="nav-link" id="final" href="{{ url_for('static', filename='viewJou.html') }}">View Journal</a>
+    </nav>
+    
+
+</body>
+
+</html>

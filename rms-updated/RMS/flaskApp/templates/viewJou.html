@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flaskApp/templates/login.css">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #051414;
+            z-index: -1;
+        }
+        h1{
+            padding-top: 3%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+        tr{
+            color: #d9e4dd;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        .table{
+            
+            color: aquamarine;
+            padding-top: 13%;
+            padding-left: 39.6%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Journal</h1>
+<div class="table">
+    <table border="1">
+    {% for value in userdata2 %}
+    <tr>
+        <td> {{value[0]}}</td>
+        <td>{{value[1]}}</td>
+        <td>{{value[2]}}</td>
+        <td>{{value[3]}}</td>
+        <td>{{value[4]}}</td>
+        <td>{{value[5]}}</td>
+        <td>{{value[6]}}</td>
+        
+        <!-- <td>{{value[4]}}</td> -->
+    </tr>
+    {% endfor %}
+</table>
+</div>
+</body>
+
+</html>

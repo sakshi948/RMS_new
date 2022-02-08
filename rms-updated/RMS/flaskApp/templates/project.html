@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Management System</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" media="screen and (max-width:1127px)" href="css/phone.css">
+</head>
+
+<body style="overflow: hidden;">
+    <nav id="navbar">
+
+        <ul>
+            <li class="items"><a href="{{ url_for('static', filename='login.htm') }}">Login</a></li>
+            <li class="items"><a href="{{ url_for('static' , filename  = 'SignUP.html')}}">Sign Up</a></li>
+        </ul>
+
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> Papers And Journal Management System</h1>
+        <p>RMS is a new platform that manages the pre-award, post-award, and publication phases of a research grant or
+            contract.</p>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing ncidunt, esse corrupti dolorum .</p> -->
+    </section>
+
+
+
+
+
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #051414;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    <div class="footer">
+        <p>Submitted By : Vishal Sachan</p>
+    </div>
+
+</body>
+
+</html>

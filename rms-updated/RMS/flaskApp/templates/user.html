@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #001d2e;
+        }
+        h1{
+            padding-top: 3%;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        tr{
+            color: #d9e4dd;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .table{
+            
+            padding-top: 13%;
+            padding-left: 35.6%;
+        }
+    </style>
+</head>
+<body>
+<h1>AUTHOR DETAILS</h1>
+<div class="table">
+    <table border="1">
+    {% for value in userDetails %}
+    <tr>
+        <td> {{value[0]}}</td>
+        <td>{{value[1]}}</td>
+        <td>{{value[2]}}</td>
+        <td>{{value[3]}}</td>
+        <td>{{value[4]}}</td>
+        <td>{{value[5]}}</td>
+        <!-- <td>{{value[4]}}</td> -->
+    </tr>
+    {% endfor %}
+</table>
+</div>
+</body>
+</html>
